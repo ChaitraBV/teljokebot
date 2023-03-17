@@ -1,0 +1,21 @@
+<table>
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Stupid</th>
+        <th>Fat</th>
+        <th>Dumb</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for username, counts in user_counts.items %}
+      <tr>
+        <td>{{ username }}</td>
+        <td>{{ counts.stupid }}</td>
+        <td>{{ counts.fat }}</td>
+        <td>{{ counts.dumb }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
